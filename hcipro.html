@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SR University Timetable Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1A5276;
+            text-align: center;
+            color: #F1C40F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            max-width: 300px;
+            max-height: 300px;
+            margin-right: 40px;
+        }
+
+        .content {
+            text-align: left;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #F1C40F;
+        }
+
+        .form-container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #F1C40F;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        select {
+            background-color: #F1C40F;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+        }
+
+        .select-container {
+            position: relative;
+        }
+
+        .select-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        input[type="submit"] {
+            background-color: #F1C40F;
+            color: #1A5276;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #F39C12;
+        }
+    </style>
+</head>
+<body>
+
+<img src="https://cache.careers360.mobi/media/colleges/social-media/logo/SR_University_Warangal.jpg" alt="SR University Logo" class="logo">
+
+<div class="content">
+    <h1>SR University Timetable Portal</h1>
+
+    <div class="form-container">
+        <form action="#" id="chooseTimetableForm">
+            <div class="select-container">
+                <label for="year">Select Year:</label>
+                <select id="year" name="year">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                </select>
+                <span class="select-icon">&#9660;</span>
+            </div>
+            <br>
+            <div class="select-container">
+                <label for="section">Select Section:</label>
+                <select id="section" name="section">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="K">K</option>
+                    <option value="L">L</option>
+                </select>
+                <span class="select-icon">&#9660;</span>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('chooseTimetableForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var year = document.getElementById('year').value;
+        var section = document.getElementById('section').value;
+        
+        if (year == "2") {
+            if (section == "A") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-A.html";
+            } else if (section == "B") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-B.html";
+            } else if (section == "C") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-C.html";
+            } else if (section == "D") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-D.html";
+            } else if (section == "E") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-E.html";
+            } else if (section == "F") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-F.html";
+            } else if (section == "G") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-G.html";
+            } else if (section == "H") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-H.html";
+            } else if (section == "I") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-I.html";
+            } else if (section == "J") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-J.html";
+            } else if (section == "K") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-K.html";
+            } else if (section == "L") {
+                window.location.href = "file:///C:/Users/shash/Downloads/2CSE-L.html";
+            } else {
+                alert('Timetable not available for this section.');
+            }
+        } else {
+            alert('Timetable selection is available only for the 2nd year.');
+        }
+    });
+</script>
+
+</body>
+</html>
